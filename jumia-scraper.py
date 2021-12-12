@@ -8,7 +8,7 @@ import pandas as pd
 
 logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
 
-BASE_URL = 'https://www.jumia.com.ng'
+BASE_URL = 'https://www.jumia.com.ke'
 CATALOG_URL = BASE_URL + '/catalog/?q='
 
 
@@ -150,10 +150,10 @@ def sortReviews(query):
     return topDeals(query=query, sorter='&sort=rating')
 
 
-re = sortReviews(query='android-phones')
+re = sortReviews(query='oppo')
 
 results = pd.DataFrame(re)
-results.to_csv('results.csv',index=False)
+results.to_csv('oppo.csv',index=False)
 
 
 
