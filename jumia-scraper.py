@@ -8,7 +8,7 @@ import pandas as pd
 
 logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
 
-BASE_URL = 'https://www.jumia.com.ke'
+BASE_URL = 'https://www.jumia.com.ng'
 CATALOG_URL = BASE_URL + '/catalog/?q='
 
 
