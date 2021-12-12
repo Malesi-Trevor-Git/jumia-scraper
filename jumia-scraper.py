@@ -3,9 +3,9 @@ import pandas as pd
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup as beautiful
-url="https://www.jumia.co.ke/phones"
+url="https://www.jumia.co.ke/android-phone/"
 all_urls=[]
-for page in range(1000):
+for page in range(10):
     next_urls=url+'?page='+str(page)
     all_urls.append(next_urls)
 for url in all_urls:
