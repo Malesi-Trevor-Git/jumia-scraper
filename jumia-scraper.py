@@ -149,11 +149,11 @@ def rangePriceHigh(query, prange):
 def sortReviews(query):
     return topDeals(query=query, sorter='&sort=rating')
 
-
-re = sortReviews(query='oppo')
+item=input()
+re = sortReviews(query=item)
 
 results = pd.DataFrame(re)
-results.to_csv('oppo.csv',index=False)
+results.to_csv('{}.csv'.format(item),index=False)
 
 
 
